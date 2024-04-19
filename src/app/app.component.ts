@@ -8,6 +8,18 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
-  title = 'angularboot5';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+
+
+  //Sidebar toggle show hide function
+  status = false;
+  addToggle() {
+    this.status = !this.status;
+  }
+
 }
